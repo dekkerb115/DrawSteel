@@ -1,0 +1,4 @@
+- [Healing Potion](https://steelcompendium.io/compendium/main/Rules/Treasures/Consumables/1st%20Echelon%20Consumables/Healing%20Potion/)
+- [Fosense Lens](https://steelcompendium.io/compendium/main/Rules/Treasures/Leveled%20Treasures/Leveled%20Implement%20Treasures/Foesense%20Lenses/)
+- [Bloodbound Band](https://steelcompendium.io/compendium/main/Rules/Treasures/Leveled%20Treasures/Other%20Leveled%20Treasures/Bloodbound%20Band/)
+- [Buzz Balm](https://steelcompendium.io/compendium/main/Rules/Treasures/Consumables/1st%20Echelon%20Consumables/Buzz%20Balm/)

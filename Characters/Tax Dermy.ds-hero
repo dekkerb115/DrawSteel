@@ -1,0 +1,4081 @@
+{
+	"id": "0mKg4vs0jPEiHrUt",
+	"name": "Tax Dermy",
+	"folder": "",
+	"settingIDs": [
+		"",
+		"orden"
+	],
+	"ancestry": {
+		"id": "ancestry-revenant",
+		"name": "Revenant",
+		"description": "The dead walk among us. Some of them are happier about it than others. Unlike the necromantic rituals that produce wights and wraiths and zombies, revenants rise from the grave through a combination of an unjust death and a burning desire for vengeance. Creatures sustained on pure will, they have no need of food or water or air - and, unlike their zombified cousins, they retain all their memories and personality from life.",
+		"features": [
+			{
+				"id": "revenant-feature-1",
+				"name": "Former Life",
+				"description": "Choose the ancestry you were before you died. Your size is that ancestry’s size and your speed is 5. Unless you select one of the Previous Life traits (see below), you don’t receive any other ancestral traits from your original ancestry.",
+				"type": "Ancestry Choice",
+				"data": {
+					"selected": {
+						"id": "ancestry-hakaan",
+						"name": "Hakaan",
+						"description": "In spite of their friendly, outgoing nature, the rare presence of a hakaan in human society is considered a harbinger - an omen of dark times. Descended from a tribe of giants in upper Vanigar, the original Haka’an tribe made a bargain with Holkatja the Vanigar trickster god. They traded some of their gigantic size and strength for the ability to see the future.",
+						"features": [
+							{
+								"id": "hakaan-feature-1",
+								"name": "Big!",
+								"description": "",
+								"type": "Size",
+								"data": {
+									"size": {
+										"value": 1,
+										"mod": "L"
+									}
+								}
+							},
+							{
+								"id": "hakaan-feature-2",
+								"name": "Hakaan Traits",
+								"description": "",
+								"type": "Choice",
+								"data": {
+									"options": [
+										{
+											"feature": {
+												"id": "hakaan-feature-2-1",
+												"name": "All Is A Feather",
+												"description": "You are exceptionally strong. You gain an edge on tests made to lift and haul heavy objects.",
+												"type": "Text",
+												"data": null
+											},
+											"value": 1
+										},
+										{
+											"feature": {
+												"id": "hakaan-feature-2-2",
+												"name": "Forceful",
+												"description": "Whenever you force move a creature or object, the forced movement distance gains a +1 bonus.",
+												"type": "Multiple Features",
+												"data": {
+													"features": [
+														{
+															"id": "hakaan-feature-2-2a",
+															"name": "Forced Movement: Push",
+															"description": "",
+															"type": "Bonus",
+															"data": {
+																"field": "Forced Movement: Push",
+																"value": 1,
+																"valueFromController": null,
+																"valueCharacteristics": [],
+																"valueCharacteristicMultiplier": 1,
+																"valuePerLevel": 0,
+																"valuePerEchelon": 0
+															}
+														},
+														{
+															"id": "hakaan-feature-2-2b",
+															"name": "Forced Movement: Pull",
+															"description": "",
+															"type": "Bonus",
+															"data": {
+																"field": "Forced Movement: Pull",
+																"value": 1,
+																"valueFromController": null,
+																"valueCharacteristics": [],
+																"valueCharacteristicMultiplier": 1,
+																"valuePerLevel": 0,
+																"valuePerEchelon": 0
+															}
+														},
+														{
+															"id": "hakaan-feature-2-2c",
+															"name": "Forced Movement: Slide",
+															"description": "",
+															"type": "Bonus",
+															"data": {
+																"field": "Forced Movement: Slide",
+																"value": 1,
+																"valueFromController": null,
+																"valueCharacteristics": [],
+																"valueCharacteristicMultiplier": 1,
+																"valuePerLevel": 0,
+																"valuePerEchelon": 0
+															}
+														}
+													]
+												}
+											},
+											"value": 1
+										},
+										{
+											"feature": {
+												"id": "hakaan-feature-2-3",
+												"name": "Stand Tough",
+												"description": "Your body is made to withstand the blows of your enemies. Your Might score is treated as 1 higher for resisting potencies, and you gain an edge on Might tests when called for to resist environmental effects or a creature’s traits or abilities.",
+												"type": "Text",
+												"data": null
+											},
+											"value": 1
+										},
+										{
+											"feature": {
+												"id": "hakaan-feature-2-4",
+												"name": "Great Fortitude",
+												"description": "Your hearty constitution prevents you from losing strength.",
+												"type": "Condition Immunity",
+												"data": {
+													"conditions": [
+														"Weakened"
+													]
+												}
+											},
+											"value": 2
+										},
+										{
+											"feature": {
+												"id": "hakaan-feature-2-5",
+												"name": "Doomsight",
+												"description": "\nWorking with your Director, you can predetermine an encounter in which you will die. When that encounter begins, you become doomed. While doomed, you automatically obtain a tier 3 outcome on tests and ability rolls, and you don’t die no matter how low your Stamina falls. You then die immediately at the end of the encounter, and can’t be returned to life by any means.\n\nIf you don’t predetermine your death encounter, you can choose to become doomed while you are dying with the Director’s approval (no action required). Doing so should be reserved for encounters in which you are dying as a result of suitable heroism, such as making a last stand against a boss or saving civilians, or when the consequences of your actions have finally caught up to you — not because you’re playing a one-shot and have nothing to lose, Hacaarl.\n\nAdditionally, when your Stamina reaches the negative of your winded value and you are not doomed, you turn to rubble instead of experiencing death. You are unaware of your surroundings in this state, and you can’t regain Stamina or have this effect undone in any way. After 12 hours, you regain Stamina equal to your Recovery value.",
+												"type": "Text",
+												"data": null
+											},
+											"value": 2
+										}
+									],
+									"count": "ancestry",
+									"selectAt": "build",
+									"selected": []
+								}
+							}
+						],
+						"ancestryPoints": 3,
+						"culture": {
+							"id": "culture-hakaan",
+							"name": "Hakaan",
+							"description": "Rural, communal, labor.",
+							"type": "Ancestral",
+							"language": {
+								"id": "culture-hakaan-language",
+								"name": "Language",
+								"description": "",
+								"type": "Language Choice",
+								"data": {
+									"options": [],
+									"count": 1,
+									"selected": [
+										"Vhoric"
+									]
+								}
+							},
+							"environment": {
+								"id": "env-rural",
+								"name": "Rural",
+								"description": "A rural culture is one located in a town, village, or smaller settled enclave.",
+								"type": "Skill Choice",
+								"data": {
+									"options": [],
+									"listOptions": [
+										"Crafting",
+										"Lore"
+									],
+									"count": 1,
+									"selected": []
+								}
+							},
+							"organization": {
+								"id": "org-communal",
+								"name": "Communal",
+								"description": "A communal culture is a place where all members of the culture are considered equal.",
+								"type": "Skill Choice",
+								"data": {
+									"options": [],
+									"listOptions": [
+										"Crafting",
+										"Exploration"
+									],
+									"count": 1,
+									"selected": []
+								}
+							},
+							"upbringing": {
+								"id": "up-labor",
+								"name": "Labor",
+								"description": "Your hero came of age in a culture where people labored for a living.",
+								"type": "Skill Choice",
+								"data": {
+									"options": [
+										"Blacksmithing",
+										"Handle Animals"
+									],
+									"listOptions": [
+										"Exploration"
+									],
+									"count": 1,
+									"selected": []
+								}
+							}
+						}
+					}
+				}
+			},
+			{
+				"id": "revenant-feature-2",
+				"name": "Damage Modifier",
+				"description": "",
+				"type": "Damage Modifier",
+				"data": {
+					"modifiers": [
+						{
+							"damageType": "Cold",
+							"type": "Immunity",
+							"value": 1,
+							"valueFromController": null,
+							"valueCharacteristics": [],
+							"valueCharacteristicMultiplier": 1,
+							"valuePerLevel": 1,
+							"valuePerEchelon": 0
+						},
+						{
+							"damageType": "Corruption",
+							"type": "Immunity",
+							"value": 1,
+							"valueFromController": null,
+							"valueCharacteristics": [],
+							"valueCharacteristicMultiplier": 1,
+							"valuePerLevel": 1,
+							"valuePerEchelon": 0
+						},
+						{
+							"damageType": "Lightning",
+							"type": "Immunity",
+							"value": 1,
+							"valueFromController": null,
+							"valueCharacteristics": [],
+							"valueCharacteristicMultiplier": 1,
+							"valuePerLevel": 1,
+							"valuePerEchelon": 0
+						},
+						{
+							"damageType": "Poison",
+							"type": "Immunity",
+							"value": 1,
+							"valueFromController": null,
+							"valueCharacteristics": [],
+							"valueCharacteristicMultiplier": 1,
+							"valuePerLevel": 1,
+							"valuePerEchelon": 0
+						},
+						{
+							"damageType": "Fire",
+							"type": "Weakness",
+							"value": 5,
+							"valueFromController": null,
+							"valueCharacteristics": [],
+							"valueCharacteristicMultiplier": 1,
+							"valuePerLevel": 0,
+							"valuePerEchelon": 0
+						}
+					]
+				}
+			},
+			{
+				"id": "revenant-feature-3",
+				"name": "Tough But Withered",
+				"description": "When your Stamina reaches the negative of your winded value, you become inert instead of dying. You fall prone and can’t stand. You continue to observe your surroundings, but you can’t speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any fire damage, your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value.",
+				"type": "Text",
+				"data": null
+			},
+			{
+				"id": "revenant-feature-4",
+				"name": "Revenant Traits",
+				"description": "",
+				"type": "Choice",
+				"data": {
+					"options": [
+						{
+							"feature": {
+								"id": "revenant-feature-4-1",
+								"name": "Ancestry Feature",
+								"description": "",
+								"type": "Ancestry Feature Choice",
+								"data": {
+									"source": {
+										"current": false,
+										"former": true,
+										"customID": ""
+									},
+									"value": 1,
+									"selected": null
+								}
+							},
+							"value": 1
+						},
+						{
+							"feature": {
+								"id": "revenant-feature-4-2",
+								"name": "Undead Influence",
+								"description": "Your supernatural gifts allow you to influence other undead. You gain an edge on Reason, Intuition, and Presence tests made to interact with undead creatures.",
+								"type": "Text",
+								"data": null
+							},
+							"value": 1
+						},
+						{
+							"feature": {
+								"id": "revenant-feature-4-3",
+								"name": "Bloodless",
+								"description": "For you, an open wound is indistinguishable from a scratch.",
+								"type": "Condition Immunity",
+								"data": {
+									"conditions": [
+										"Bleeding"
+									]
+								}
+							},
+							"value": 2
+						},
+						{
+							"feature": {
+								"id": "revenant-feature-4-4",
+								"name": "Ancestry Feature",
+								"description": "",
+								"type": "Ancestry Feature Choice",
+								"data": {
+									"source": {
+										"current": false,
+										"former": true,
+										"customID": ""
+									},
+									"value": 2,
+									"selected": null
+								}
+							},
+							"value": 2
+						},
+						{
+							"feature": {
+								"id": "revenant-feature-4-5",
+								"name": "Vengeance Mark",
+								"description": "Vengeance Mark, Detonate Sigil",
+								"type": "Multiple Features",
+								"data": {
+									"features": [
+										{
+											"id": "revenant-feature-4-5-1",
+											"name": "Vengeance Mark",
+											"description": "\nAs a maneuver, you place a magic sigil on a creature within 10 squares of you. When you place a sigil, you can decide where it appears on the creature’s body, and whether the sigil is visible to only you or to all creatures.\n\nYou always know the direction to the exact location of a creature who bears one of your sigils and is on the same world. You can have an active number of sigils equal to your level, and can remove a sigil from a creature at will (no action required). If you already have the maximum number of sigils activated and you place a new one, your oldest sigil disappears with no other effect.",
+											"type": "Text",
+											"data": null
+										},
+										{
+											"id": "revenant-feature-4-5-2",
+											"name": "Detonate Sigil",
+											"description": "A magic sigil you placed on a creature explodes with energy.",
+											"type": "Ability",
+											"data": {
+												"ability": {
+													"id": "revenant-feature-4-5-2",
+													"name": "Detonate Sigil",
+													"description": "A magic sigil you placed on a creature explodes with energy.",
+													"type": {
+														"usage": "Main Action",
+														"free": false,
+														"trigger": "",
+														"time": "",
+														"qualifiers": [],
+														"freeStrike": false
+													},
+													"keywords": [
+														"Magic",
+														"Ranged",
+														"Strike"
+													],
+													"distance": [
+														{
+															"type": "Ranged",
+															"value": 10,
+															"value2": 0,
+															"within": 0,
+															"special": "",
+															"qualifier": ""
+														}
+													],
+													"target": "One creature bearing your sigil",
+													"cost": "signature",
+													"repeatable": false,
+													"minLevel": 1,
+													"sections": [
+														{
+															"type": "roll",
+															"roll": {
+																"characteristic": [
+																	"Reason",
+																	"Intuition",
+																	"Presence"
+																],
+																"bonus": 0,
+																"tier1": "3 + R, I, or P damage; slide 1",
+																"tier2": "5 + R, I, or P damage; slide 2",
+																"tier3": "7 + R, I, or P damage; slide 3"
+															}
+														},
+														{
+															"type": "text",
+															"text": "The sigil disappears from the creature."
+														}
+													]
+												}
+											}
+										}
+									]
+								}
+							},
+							"value": 2
+						}
+					],
+					"count": "ancestry",
+					"selectAt": "build",
+					"selected": [
+						{
+							"id": "revenant-feature-4-2",
+							"name": "Undead Influence",
+							"description": "Your supernatural gifts allow you to influence other undead. You gain an edge on Reason, Intuition, and Presence tests made to interact with undead creatures.",
+							"type": "Text",
+							"data": null
+						},
+						{
+							"id": "hakaan-feature-2-1",
+							"name": "All Is A Feather",
+							"description": "You are exceptionally strong. You gain an edge on tests made to lift and haul heavy objects.",
+							"type": "Text",
+							"data": null
+						}
+					]
+				}
+			}
+		],
+		"ancestryPoints": 2
+	},
+	"culture": {
+		"id": "culture-borderland-homestead",
+		"name": "Borderland Homestead",
+		"description": "Wilderness, communal, labor.",
+		"type": "Professional",
+		"language": {
+			"id": "culture-borderland-homestead-language",
+			"name": "Language",
+			"description": "",
+			"type": "Language Choice",
+			"data": {
+				"options": [],
+				"count": 1,
+				"selected": []
+			}
+		},
+		"environment": {
+			"id": "env-wilderness",
+			"name": "Wilderness",
+			"description": "A wilderness culture doesn’t try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes.",
+			"type": "Skill Choice",
+			"data": {
+				"options": [],
+				"listOptions": [
+					"Crafting",
+					"Exploration"
+				],
+				"count": 1,
+				"selected": [
+					"Alchemy"
+				]
+			}
+		},
+		"organization": {
+			"id": "org-communal",
+			"name": "Communal",
+			"description": "A communal culture is a place where all members of the culture are considered equal.",
+			"type": "Skill Choice",
+			"data": {
+				"options": [],
+				"listOptions": [
+					"Crafting",
+					"Exploration"
+				],
+				"count": 1,
+				"selected": [
+					"Handle Animals"
+				]
+			}
+		},
+		"upbringing": {
+			"id": "up-labor",
+			"name": "Labor",
+			"description": "Your hero came of age in a culture where people labored for a living.",
+			"type": "Skill Choice",
+			"data": {
+				"options": [
+					"Blacksmithing",
+					"Handle Animals"
+				],
+				"listOptions": [
+					"Exploration"
+				],
+				"count": 1,
+				"selected": [
+					"Heal"
+				]
+			}
+		}
+	},
+	"class": {
+		"id": "class-conduit",
+		"name": "Conduit",
+		"description": "\nThe power of the gods flows through you! As a vessel for divine power, you don’t just keep your allies in the fight. You make those allies more effective, even as you rain divine energy down upon your foes. Though the deity or saint you serve might have other faithful and clergy, you are special among worshippers, receiving your abilities from the highest source.\n\nAs a conduit, you heal and buff your allies, and debuff your foes while smiting them with divine magic. The spark of divinity within you shines, filling your enemies with awe and making you more worldly and aware.",
+		"type": "standard",
+		"subclassName": "",
+		"subclassCount": 0,
+		"primaryCharacteristicsOptions": [
+			[
+				"Intuition"
+			]
+		],
+		"primaryCharacteristics": [
+			"Intuition"
+		],
+		"featuresByLevel": [
+			{
+				"level": 1,
+				"features": [
+					{
+						"id": "conduit-stamina",
+						"name": "Stamina",
+						"description": "",
+						"type": "Bonus",
+						"data": {
+							"field": "Stamina",
+							"value": 18,
+							"valueFromController": null,
+							"valueCharacteristics": [],
+							"valueCharacteristicMultiplier": 1,
+							"valuePerLevel": 6,
+							"valuePerEchelon": 0
+						}
+					},
+					{
+						"id": "conduit-recoveries",
+						"name": "Recoveries",
+						"description": "",
+						"type": "Bonus",
+						"data": {
+							"field": "Recoveries",
+							"value": 8,
+							"valueFromController": null,
+							"valueCharacteristics": [],
+							"valueCharacteristicMultiplier": 1,
+							"valuePerLevel": 0,
+							"valuePerEchelon": 0
+						}
+					},
+					{
+						"id": "conduit-resource",
+						"name": "Piety",
+						"description": "",
+						"type": "Heroic Resource",
+						"data": {
+							"type": "heroic",
+							"gains": [
+								{
+									"tag": "start",
+									"trigger": "Start of your turn",
+									"value": "1d3"
+								}
+							],
+							"details": "",
+							"canBeNegative": false,
+							"value": 0
+						}
+					},
+					{
+						"id": "conduit-1-1",
+						"name": "Interpersonal / Lore Skills",
+						"description": "",
+						"type": "Skill Choice",
+						"data": {
+							"options": [],
+							"listOptions": [
+								"Interpersonal",
+								"Lore"
+							],
+							"count": 2,
+							"selected": [
+								"Strategy",
+								"Read Person"
+							]
+						}
+					},
+					{
+						"id": "conduit-1-2",
+						"name": "Domain",
+						"description": "",
+						"type": "Domain",
+						"data": {
+							"characteristic": "Intuition",
+							"levels": [
+								1,
+								2,
+								3,
+								4,
+								5,
+								6,
+								7,
+								8,
+								9,
+								10
+							],
+							"count": 2,
+							"selected": [
+								{
+									"id": "domain-life",
+									"name": "Life",
+									"description": "The Life domain.",
+									"featuresByLevel": [
+										{
+											"level": 1,
+											"features": [
+												{
+													"id": "domain-life-1",
+													"name": "Revitalizing Ritual, Exploration Skill",
+													"description": "Revitalizing Ritual, Exploration Skill",
+													"type": "Multiple Features",
+													"data": {
+														"features": [
+															{
+																"id": "domain-life-1-1",
+																"name": "Revitalizing Ritual",
+																"description": "Each time you finish a respite, you can choose yourself or one ally who is also finishing a respite to gain the benefit of a divine ritual. The chosen character gains a bonus to their recovery value equal to your level that lasts until you finish another respite.",
+																"type": "Text",
+																"data": null
+															},
+															{
+																"id": "domain-life-1-2",
+																"name": "Exploration Skill",
+																"description": "",
+																"type": "Skill Choice",
+																"data": {
+																	"options": [],
+																	"listOptions": [
+																		"Exploration"
+																	],
+																	"count": 1,
+																	"selected": []
+																}
+															}
+														]
+													}
+												}
+											]
+										},
+										{
+											"level": 2,
+											"features": [
+												{
+													"id": "domain-life-2",
+													"name": "Wellspring of Grace",
+													"description": "A holy light is emitted from your body, healing your allies.",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "domain-life-2",
+															"name": "Wellspring of Grace",
+															"description": "A holy light is emitted from your body, healing your allies.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Area",
+																"Magic"
+															],
+															"distance": [
+																{
+																	"type": "Aura",
+																	"value": 3,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Each ally in the area",
+															"cost": 5,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "Until the end of the encounter or until you are dying, whenever a target starts their turn in the area, they can spend a Recovery."
+																}
+															]
+														}
+													}
+												}
+											]
+										},
+										{
+											"level": 3,
+											"features": []
+										},
+										{
+											"level": 4,
+											"features": [
+												{
+													"id": "domain-life-4",
+													"name": "Blessing of Life",
+													"description": "\n* If you are a **Conduit**: Your divine presence causes those you deem worthy to recover quickly from a fight. Whenever an ally within distance of your Healing Grace ability regains Stamina, they regain additional Stamina equal to your Intuition score.\n* If you are a **Censor**: Your divine presence causes those you deem worthy to recover quickly from a fight. Whenever an ally within distance of your My Life For Yours ability regains Stamina, they regain additional Stamina equal to your Presence score.\n",
+													"type": "Text",
+													"data": null
+												}
+											]
+										},
+										{
+											"level": 5,
+											"features": []
+										},
+										{
+											"level": 6,
+											"features": [
+												{
+													"id": "domain-life-6",
+													"name": "Revitalizing Grace",
+													"description": "With a gesture, you restore your health and that of your allies.",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "domain-life-6",
+															"name": "Revitalizing Grace",
+															"description": "With a gesture, you restore your health and that of your allies.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Area",
+																"Magic"
+															],
+															"distance": [
+																{
+																	"type": "Burst",
+																	"value": 4,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Self and each ally in the area",
+															"cost": 9,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "Each target can spend any number of Recoveries. Additionally, each target can end one effect on themself that is ended by a saving throw or that ends at the end of their turn, or they can stand up if prone."
+																}
+															]
+														}
+													}
+												}
+											]
+										},
+										{
+											"level": 7,
+											"features": [
+												{
+													"id": "domain-life-7",
+													"name": "Font of Grace",
+													"description": "\n* If you are a **Conduit**: Each time you use your *Healing Grace* ability, you gain 1 piety that can be spent only on that ability during the same turn. If you don’t use this piety, it is lost. Additionally, you can use your *Minor Miracle* feature to return a creature to life even if you don’t have their remains.\n* If you are a **Censor**: Each time you use your *My Life for Yours* ability, you gain 1 wrath that can be spent only on that ability during the same turn. If you don’t use this wrath, it is lost. Additionally, the target of *My Life for Yours* gains 10 temporary Stamina.",
+													"type": "Text",
+													"data": null
+												}
+											]
+										},
+										{
+											"level": 8,
+											"features": []
+										},
+										{
+											"level": 9,
+											"features": [
+												{
+													"id": "domain-life-9",
+													"name": "Radiance of Grace",
+													"description": "Intense light is emitted from your body, healing your allies.",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "domain-life-9",
+															"name": "Radiance of Grace",
+															"description": "Intense light is emitted from your body, healing your allies.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Ranged"
+															],
+															"distance": [
+																{
+																	"type": "Ranged",
+																	"value": 10,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Four Allies",
+															"cost": 11,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "You can target yourself instead of one ally with this ability. Each target can spend any number of Recoveries, can end any effects on them that are ended by a saving throw or that end at the end of their turn, and can stand up if they are prone."
+																}
+															]
+														}
+													}
+												}
+											]
+										},
+										{
+											"level": 10,
+											"features": []
+										}
+									],
+									"resourceGains": [
+										{
+											"resource": "Piety",
+											"tag": "",
+											"trigger": "The first time in an encounter that a creature within 10 squares regains Stamina",
+											"value": "2"
+										}
+									],
+									"defaultFeatures": [
+										{
+											"id": "life-default-1",
+											"name": "Life Prayer Effect",
+											"description": "Choose yourself or one ally within 10 squares of you. That character can spend a Recovery, can end one effect on them that is ended by a saving throw or that end at the end of their turn, or can stand up if they are prone. Alternatively, you or one ally within 10 squares gains temporary Stamina equal to 2 times your Intuition score.",
+											"type": "Package Content",
+											"data": {
+												"tag": "conduit-prayer"
+											}
+										}
+									]
+								},
+								{
+									"id": "domain-protection",
+									"name": "Protection",
+									"description": "The Protection domain.",
+									"featuresByLevel": [
+										{
+											"level": 1,
+											"features": [
+												{
+													"id": "domain-protection-1",
+													"name": "Protective Circle, Exploration Skill",
+													"description": "Protective Circle, Exploration Skill",
+													"type": "Multiple Features",
+													"data": {
+														"features": [
+															{
+																"id": "domain-protection-1-1",
+																"name": "Protective Circle",
+																"description": "You can spend 10 uninterrupted minutes to create a protective circle on the ground large enough to hold one size 1 creature. The circle lasts for 24 hours, until you create another, or until you dismiss it (no action required). Only creatures you designate at the time of drawing the circle can enter and exit the area. While in the protective circle, a creature can’t be targeted by strikes.",
+																"type": "Text",
+																"data": null
+															},
+															{
+																"id": "domain-protection-1-2",
+																"name": "Exploration Skill",
+																"description": "",
+																"type": "Skill Choice",
+																"data": {
+																	"options": [],
+																	"listOptions": [
+																		"Exploration"
+																	],
+																	"count": 1,
+																	"selected": []
+																}
+															}
+														]
+													}
+												}
+											]
+										},
+										{
+											"level": 2,
+											"features": [
+												{
+													"id": "domain-protection-2",
+													"name": "Sacred Bond",
+													"description": "You forge a divine connection between two creatures.",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "domain-protection-2",
+															"name": "Sacred Bond",
+															"description": "You forge a divine connection between two creatures.",
+															"type": {
+																"usage": "Maneuver",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Ranged"
+															],
+															"distance": [
+																{
+																	"type": "Ranged",
+																	"value": 10,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Self and one ally",
+															"cost": 5,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "\nUntil the end of the encounter, whenever one target takes damage, the other target can use a free triggered action to take the damage instead. The original target suffers any effects associated with the damage.\n\nAdditionally, whenever one target spends a Recovery, the other target can use a free triggered action to spend a Recovery."
+																}
+															]
+														}
+													}
+												}
+											]
+										},
+										{
+											"level": 3,
+											"features": []
+										},
+										{
+											"level": 4,
+											"features": [
+												{
+													"id": "domain-protection-4",
+													"name": "Impervious Touch",
+													"description": "\nAs a maneuver, you can touch an object with a size equal to your Intuition score or smaller and place a protective spell on it. The object has immunity all to untyped damage. You can maintain this spell on a number of objects equal to your Intuition score, and you can end the spell on any object at any time (no action required).\n\nAdditionally, you can place this spell on a building or vehicle (or a similar structure with the Director’s approval) that is of a size larger than your Intuition score. You can place the spell on only one such target at a time, and you can maintain the spell on a larger target and a number of objects equal to your Intuition score simultaneously.",
+													"type": "Text",
+													"data": null
+												}
+											]
+										},
+										{
+											"level": 5,
+											"features": []
+										},
+										{
+											"level": 6,
+											"features": [
+												{
+													"id": "domain-protection-6",
+													"name": "Cuirass of the Gods",
+													"description": "Your allies are covered in spiritual armor.",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "domain-protection-6",
+															"name": "Cuirass of the Gods",
+															"description": "Your allies are covered in spiritual armor.",
+															"type": {
+																"usage": "Maneuver",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Area",
+																"Magic",
+																"Ranged"
+															],
+															"distance": [
+																{
+																	"type": "Ranged",
+																	"value": 10,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Three creatures",
+															"cost": 9,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "You can target yourself instead of one creature with this ability. Each target has damage immunity 5 until the start of your next turn."
+																}
+															]
+														}
+													}
+												}
+											]
+										},
+										{
+											"level": 7,
+											"features": [
+												{
+													"id": "domain-protection-7",
+													"name": "Blessing of Iron",
+													"description": "The gods send divine favor to you and your allies. While you are not dying, enemies take a bane on strikes against you or any ally within 3 squares of you.",
+													"type": "Text",
+													"data": null
+												}
+											]
+										},
+										{
+											"level": 8,
+											"features": []
+										},
+										{
+											"level": 9,
+											"features": [
+												{
+													"id": "domain-protection-9",
+													"name": "Blessing of the Fortress",
+													"description": "A magic circle extends out from you, barring foes from getting close.",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "domain-protection-9",
+															"name": "Blessing of the Fortress",
+															"description": "A magic circle extends out from you, barring foes from getting close.",
+															"type": {
+																"usage": "Maneuver",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Area",
+																"Magic"
+															],
+															"distance": [
+																{
+																	"type": "Self",
+																	"value": 0,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Self",
+															"cost": 11,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "Until the end of the encounter or until you are dying, no enemy can approach within 5 squares of you by moving or by being force moved by any enemy. Targets can be force moved closer to you by you or your allies, or can move closer because of your movement."
+																}
+															]
+														}
+													}
+												}
+											]
+										},
+										{
+											"level": 10,
+											"features": []
+										}
+									],
+									"resourceGains": [
+										{
+											"resource": "Piety",
+											"tag": "",
+											"trigger": "The first time in an encounter that you or any ally within 10 squares gains temporary Stamina, or uses a triggered action to reduce incoming damage or impose a bane or double bane on an enemy’s power roll.",
+											"value": "2"
+										}
+									],
+									"defaultFeatures": [
+										{
+											"id": "protection-default-1",
+											"name": "Protection Prayer Effect",
+											"description": "One ally within 10 squares gains temporary Stamina equal to four times your Intuition score.",
+											"type": "Package Content",
+											"data": {
+												"tag": "conduit-prayer"
+											}
+										}
+									]
+								}
+							]
+						}
+					},
+					{
+						"id": "conduit-1-3b",
+						"name": "Prayer",
+						"description": "\nYou can gain more piety by praying to the gods—but beware! Doing so can easily draw their ire, as the gods hate to be annoyed. Before you roll to gain piety at the start of your turn, you can pray (no action required). If you do, your roll gains the following additional effects:\n\n* If the roll is a 1, you gain 1 additional piety but anger the gods! You take psychic damage equal to 1d6 + your level, which can’t be reduced in any way.\n* If the roll is a 2, you gain 1 additional piety.\n* If the roll is a 3, you gain 2 additional piety and can activate a domain effect of your choice.",
+						"type": "Package",
+						"data": {
+							"tag": "conduit-prayer"
+						}
+					},
+					{
+						"id": "conduit-1-4",
+						"name": "1st-Level Domain Feature",
+						"description": "",
+						"type": "Domain Feature",
+						"data": {
+							"level": 1,
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-1-5",
+						"name": "Healing Grace",
+						"description": "Your divine energy restores the righteous.",
+						"type": "Ability",
+						"data": {
+							"ability": {
+								"id": "conduit-1-5",
+								"name": "Healing Grace",
+								"description": "Your divine energy restores the righteous.",
+								"type": {
+									"usage": "Maneuver",
+									"free": false,
+									"trigger": "",
+									"time": "",
+									"qualifiers": [],
+									"freeStrike": false
+								},
+								"keywords": [
+									"Magic",
+									"Ranged"
+								],
+								"distance": [
+									{
+										"type": "Ranged",
+										"value": 10,
+										"value2": 0,
+										"within": 0,
+										"special": "",
+										"qualifier": ""
+									}
+								],
+								"target": "Self or one ally",
+								"cost": 0,
+								"repeatable": false,
+								"minLevel": 1,
+								"sections": [
+									{
+										"type": "text",
+										"text": "The target can spend a Recovery."
+									},
+									{
+										"type": "field",
+										"name": "Spend",
+										"value": 1,
+										"repeatable": true,
+										"effect": "\nFor each piety spent, you can choose one of the following enhancements:\n\n* You can target one additional ally within distance.\n* You can end one effect on a target that is ended by a saving throw or that ends at the end of their turn.\n* A prone target can stand up.\n* A target can spend 1 additional Recovery."
+									}
+								]
+							}
+						}
+					},
+					{
+						"id": "conduit-1-6",
+						"name": "Ray of Wrath",
+						"description": "You unleash a blast of holy light upon your foe.",
+						"type": "Ability",
+						"data": {
+							"ability": {
+								"id": "conduit-1-6",
+								"name": "Ray of Wrath",
+								"description": "You unleash a blast of holy light upon your foe.",
+								"type": {
+									"usage": "Main Action",
+									"free": false,
+									"trigger": "",
+									"time": "",
+									"qualifiers": [
+										"can be used as a ranged free strike"
+									],
+									"freeStrike": true
+								},
+								"keywords": [
+									"Magic",
+									"Ranged",
+									"Strike"
+								],
+								"distance": [
+									{
+										"type": "Ranged",
+										"value": 10,
+										"value2": 0,
+										"within": 0,
+										"special": "",
+										"qualifier": ""
+									}
+								],
+								"target": "One creature or object",
+								"cost": 0,
+								"repeatable": false,
+								"minLevel": 1,
+								"sections": [
+									{
+										"type": "roll",
+										"roll": {
+											"characteristic": [
+												"Intuition"
+											],
+											"bonus": 0,
+											"tier1": "2 + I damage",
+											"tier2": "4 + I damage",
+											"tier3": "6 + I damage"
+										}
+									},
+									{
+										"type": "text",
+										"text": "You can have this ability deal holy damage."
+									}
+								]
+							}
+						}
+					},
+					{
+						"id": "conduit-1-7",
+						"name": "Triggered Action",
+						"description": "",
+						"type": "Choice",
+						"data": {
+							"options": [
+								{
+									"feature": {
+										"id": "conduit-1-7a",
+										"name": "Word of Guidance",
+										"description": "You invigorate an attacking ally with divine energy.",
+										"type": "Ability",
+										"data": {
+											"ability": {
+												"id": "conduit-1-7a",
+												"name": "Word of Guidance",
+												"description": "You invigorate an attacking ally with divine energy.",
+												"type": {
+													"usage": "Triggered Action",
+													"free": false,
+													"trigger": "The target makes an ability roll for a damage-dealing ability.",
+													"time": "",
+													"qualifiers": [],
+													"freeStrike": false
+												},
+												"keywords": [
+													"Magic",
+													"Ranged"
+												],
+												"distance": [
+													{
+														"type": "Ranged",
+														"value": 10,
+														"value2": 0,
+														"within": 0,
+														"special": "",
+														"qualifier": ""
+													}
+												],
+												"target": "One ally",
+												"cost": 0,
+												"repeatable": false,
+												"minLevel": 1,
+												"sections": [
+													{
+														"type": "text",
+														"text": "The power roll gains an edge."
+													},
+													{
+														"type": "field",
+														"name": "Spend",
+														"value": 1,
+														"repeatable": false,
+														"effect": "The power roll has a double edge."
+													}
+												]
+											}
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-1-7b",
+										"name": "Word of Judgment",
+										"description": "Your holy word saps an attacking enemy’s strength.",
+										"type": "Ability",
+										"data": {
+											"ability": {
+												"id": "conduit-1-7b",
+												"name": "Word of Judgment",
+												"description": "Your holy word saps an attacking enemy’s strength.",
+												"type": {
+													"usage": "Triggered Action",
+													"free": false,
+													"trigger": "The target would take damage from an ability that uses a power roll.",
+													"time": "",
+													"qualifiers": [],
+													"freeStrike": false
+												},
+												"keywords": [
+													"Magic",
+													"Ranged"
+												],
+												"distance": [
+													{
+														"type": "Ranged",
+														"value": 10,
+														"value2": 0,
+														"within": 0,
+														"special": "",
+														"qualifier": ""
+													}
+												],
+												"target": "One ally",
+												"cost": 0,
+												"repeatable": false,
+												"minLevel": 1,
+												"sections": [
+													{
+														"type": "text",
+														"text": "The power roll takes a bane against the target."
+													},
+													{
+														"type": "field",
+														"name": "Spend",
+														"value": 1,
+														"repeatable": false,
+														"effect": "The power roll has a double bane against the target."
+													}
+												]
+											}
+										}
+									},
+									"value": 1
+								}
+							],
+							"count": 1,
+							"selectAt": "build",
+							"selected": [
+								{
+									"id": "conduit-1-7b",
+									"name": "Word of Judgment",
+									"description": "Your holy word saps an attacking enemy’s strength.",
+									"type": "Ability",
+									"data": {
+										"ability": {
+											"id": "conduit-1-7b",
+											"name": "Word of Judgment",
+											"description": "Your holy word saps an attacking enemy’s strength.",
+											"type": {
+												"usage": "Triggered Action",
+												"free": false,
+												"trigger": "The target would take damage from an ability that uses a power roll.",
+												"time": "",
+												"qualifiers": [],
+												"freeStrike": false
+											},
+											"keywords": [
+												"Magic",
+												"Ranged"
+											],
+											"distance": [
+												{
+													"type": "Ranged",
+													"value": 10,
+													"value2": 0,
+													"within": 0,
+													"special": "",
+													"qualifier": ""
+												}
+											],
+											"target": "One ally",
+											"cost": 0,
+											"repeatable": false,
+											"minLevel": 1,
+											"sections": [
+												{
+													"type": "text",
+													"text": "The power roll takes a bane against the target."
+												},
+												{
+													"type": "field",
+													"name": "Spend",
+													"value": 1,
+													"repeatable": false,
+													"effect": "The power roll has a double bane against the target."
+												}
+											]
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"id": "conduit-1-8",
+						"name": "Prayer",
+						"description": "",
+						"type": "Choice",
+						"data": {
+							"options": [
+								{
+									"feature": {
+										"id": "conduit-1-8a",
+										"name": "Prayer of Destruction",
+										"description": "Your god infuses wrath within your being.",
+										"type": "Ability Damage",
+										"data": {
+											"keywords": [
+												"Magic"
+											],
+											"value": 1,
+											"valueFromController": null,
+											"valueCharacteristics": [],
+											"valueCharacteristicMultiplier": 0,
+											"valuePerLevel": 0,
+											"valuePerEchelon": 0,
+											"damageType": "Damage"
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-1-8b",
+										"name": "Prayer of Distance",
+										"description": "Your god blesses you with the ability to stretch your divine magic farther.",
+										"type": "Ability Distance",
+										"data": {
+											"keywords": [
+												"Magic",
+												"Ranged"
+											],
+											"value": 2,
+											"valueFromController": null,
+											"valueCharacteristics": [],
+											"valueCharacteristicMultiplier": 0,
+											"valuePerLevel": 0,
+											"valuePerEchelon": 0
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-1-8c",
+										"name": "Prayer of Soldier's Skill",
+										"description": "\nYour god gives your mind the training of a soldier. You can wear light armor and wield light weapons effectively, even though you don’t have a kit.\n\n* While you wear light armor, you gain a +3 bonus to Stamina, and that bonus increases by 3 at 4th, 7th, and 10th levels.\n* While you wield\na light weapon, you gain a +1 damage bonus with weapon abilities, including free strikes.\n* You can use light armor treasures and light weapon treasures.\n\nIf you have a kit, you can’t take this blessing.",
+										"type": "Multiple Features",
+										"data": {
+											"features": [
+												{
+													"id": "conduit-1-8da",
+													"name": "Stamina",
+													"description": "",
+													"type": "Bonus",
+													"data": {
+														"field": "Stamina",
+														"value": 0,
+														"valueFromController": null,
+														"valueCharacteristics": [],
+														"valueCharacteristicMultiplier": 1,
+														"valuePerLevel": 0,
+														"valuePerEchelon": 3
+													}
+												},
+												{
+													"id": "conduit-1-8db",
+													"name": "Ability damage modifier",
+													"description": "",
+													"type": "Ability Damage",
+													"data": {
+														"keywords": [
+															"Weapon"
+														],
+														"value": 1,
+														"valueFromController": null,
+														"valueCharacteristics": [],
+														"valueCharacteristicMultiplier": 0,
+														"valuePerLevel": 0,
+														"valuePerEchelon": 0,
+														"damageType": "Damage"
+													}
+												},
+												{
+													"id": "conduit-1-8dc",
+													"name": "Proficiency",
+													"description": "",
+													"type": "Proficiency",
+													"data": {
+														"weapons": [
+															"Light Weapon"
+														],
+														"armor": [
+															"Light Armor"
+														]
+													}
+												}
+											]
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-1-8d",
+										"name": "Prayer of Speed",
+										"description": "Your god blesses your flesh and infuses it with divine quickness.",
+										"type": "Multiple Features",
+										"data": {
+											"features": [
+												{
+													"id": "conduit-1-8ca",
+													"name": "Speed",
+													"description": "",
+													"type": "Bonus",
+													"data": {
+														"field": "Speed",
+														"value": 1,
+														"valueFromController": null,
+														"valueCharacteristics": [],
+														"valueCharacteristicMultiplier": 1,
+														"valuePerLevel": 0,
+														"valuePerEchelon": 0
+													}
+												},
+												{
+													"id": "conduit-1-8cb",
+													"name": "Disengage",
+													"description": "",
+													"type": "Bonus",
+													"data": {
+														"field": "Disengage",
+														"value": 1,
+														"valueFromController": null,
+														"valueCharacteristics": [],
+														"valueCharacteristicMultiplier": 1,
+														"valuePerLevel": 0,
+														"valuePerEchelon": 0
+													}
+												}
+											]
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-1-8e",
+										"name": "Prayer of Steel",
+										"description": "Your god fills your body with the light of creation, making you harder to hurt and move.",
+										"type": "Multiple Features",
+										"data": {
+											"features": [
+												{
+													"id": "conduit-1-8ea",
+													"name": "Stamina",
+													"description": "",
+													"type": "Bonus",
+													"data": {
+														"field": "Stamina",
+														"value": 0,
+														"valueFromController": null,
+														"valueCharacteristics": [],
+														"valueCharacteristicMultiplier": 1,
+														"valuePerLevel": 0,
+														"valuePerEchelon": 6
+													}
+												},
+												{
+													"id": "conduit-1-8eb",
+													"name": "Stability",
+													"description": "",
+													"type": "Bonus",
+													"data": {
+														"field": "Stability",
+														"value": 1,
+														"valueFromController": null,
+														"valueCharacteristics": [],
+														"valueCharacteristicMultiplier": 1,
+														"valuePerLevel": 0,
+														"valuePerEchelon": 0
+													}
+												}
+											]
+										}
+									},
+									"value": 1
+								}
+							],
+							"count": 1,
+							"selectAt": "respite",
+							"selected": [
+								{
+									"id": "conduit-1-8b",
+									"name": "Prayer of Distance",
+									"description": "Your god blesses you with the ability to stretch your divine magic farther.",
+									"type": "Ability Distance",
+									"data": {
+										"keywords": [
+											"Magic",
+											"Ranged"
+										],
+										"value": 2,
+										"valueFromController": null,
+										"valueCharacteristics": [],
+										"valueCharacteristicMultiplier": 0,
+										"valuePerLevel": 0,
+										"valuePerEchelon": 0
+									}
+								}
+							]
+						}
+					},
+					{
+						"id": "conduit-1-9",
+						"name": "Conduit Ward",
+						"description": "",
+						"type": "Choice",
+						"data": {
+							"options": [
+								{
+									"feature": {
+										"id": "conduit-1-9a",
+										"name": "Bastion Ward",
+										"description": "Your god grants you a holy countenance that protects you at all times. You gain a +1 bonus to saving throws.",
+										"type": "Text",
+										"data": null
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-1-9b",
+										"name": "Quickness Ward",
+										"description": "The gods imbue a divine swiftness within you. Whenever an adjacent creature deals damage to you, you can shift up to a number of squares equal to your Intuition score after the damage is dealt.",
+										"type": "Text",
+										"data": null
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-1-9c",
+										"name": "Sanctuary Ward",
+										"description": "In response to a foe’s aggression, your god protects you. Whenever another creature damages you, that creature can’t target you with a strike until you harm them or one of their allies, or until the end of their next turn.",
+										"type": "Text",
+										"data": null
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-1-9d",
+										"name": "Spirit Ward",
+										"description": "Invisible spirits surround you if you are harmed. Whenever an adjacent creature deals damage to you, they take corruption damage equal to your Intuition score.",
+										"type": "Text",
+										"data": null
+									},
+									"value": 1
+								}
+							],
+							"count": 1,
+							"selectAt": "respite",
+							"selected": [
+								{
+									"id": "conduit-1-9b",
+									"name": "Quickness Ward",
+									"description": "The gods imbue a divine swiftness within you. Whenever an adjacent creature deals damage to you, you can shift up to a number of squares equal to your Intuition score after the damage is dealt.",
+									"type": "Text",
+									"data": null
+								}
+							]
+						}
+					},
+					{
+						"id": "conduit-1-10",
+						"name": "Signature Ability",
+						"description": "",
+						"type": "Class Ability",
+						"data": {
+							"cost": "signature",
+							"source": {
+								"fromClassAbilities": true,
+								"fromSelectedSubclassAbilities": true,
+								"fromUnselectedSubclassAbilities": false,
+								"fromClassLevels": false,
+								"fromSelectedSubclassLevels": false,
+								"fromUnselectedSubclassLevels": false
+							},
+							"minLevel": 1,
+							"count": 2,
+							"selectedIDs": [
+								"conduit-ability-2",
+								"conduit-ability-1"
+							]
+						}
+					},
+					{
+						"id": "conduit-1-11",
+						"name": "3pt Ability",
+						"description": "",
+						"type": "Class Ability",
+						"data": {
+							"cost": 3,
+							"source": {
+								"fromClassAbilities": true,
+								"fromSelectedSubclassAbilities": true,
+								"fromUnselectedSubclassAbilities": false,
+								"fromClassLevels": false,
+								"fromSelectedSubclassLevels": false,
+								"fromUnselectedSubclassLevels": false
+							},
+							"minLevel": 1,
+							"count": 1,
+							"selectedIDs": [
+								"conduit-ability-9"
+							]
+						}
+					},
+					{
+						"id": "conduit-1-12",
+						"name": "5pt Ability",
+						"description": "",
+						"type": "Class Ability",
+						"data": {
+							"cost": 5,
+							"source": {
+								"fromClassAbilities": true,
+								"fromSelectedSubclassAbilities": true,
+								"fromUnselectedSubclassAbilities": false,
+								"fromClassLevels": false,
+								"fromSelectedSubclassLevels": false,
+								"fromUnselectedSubclassLevels": false
+							},
+							"minLevel": 1,
+							"count": 1,
+							"selectedIDs": [
+								"conduit-ability-15"
+							]
+						}
+					}
+				]
+			},
+			{
+				"level": 2,
+				"features": [
+					{
+						"id": "conduit-2-1",
+						"name": "The Lists of Heaven",
+						"description": "Your deity is aware of your growing influence, making it easier to draw their attention and power when you heal your allies. Whenever you allow another creature to spend a Recovery, you can also spend a Recovery.",
+						"type": "Text",
+						"data": null
+					},
+					{
+						"id": "conduit-2-2",
+						"name": "Crafting / Lore / Supernatural Perk",
+						"description": "",
+						"type": "Perk",
+						"data": {
+							"lists": [
+								"Crafting",
+								"Lore",
+								"Supernatural"
+							],
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-2-3",
+						"name": "2nd-Level Domain Feature",
+						"description": "You gain the 1st-level domain feature and ability to choose a skill for the domain you selected at 1st level but whose domain feature you didn’t take at that level.",
+						"type": "Domain Feature",
+						"data": {
+							"level": 1,
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-2-4",
+						"name": "2nd-Level Domain Ability",
+						"description": "",
+						"type": "Domain Feature",
+						"data": {
+							"level": 2,
+							"count": 1,
+							"selected": []
+						}
+					}
+				]
+			},
+			{
+				"level": 3,
+				"features": [
+					{
+						"id": "conduit-3-1",
+						"name": "Minor Miracle",
+						"description": "\nAs a respite activity, you can perform a religious ritual and beseech the gods to restore a dead creature to life. You must have at least half the creature’s remains, and they must have died within the last 24 hours from an effect that isn’t age related. The creature’s soul must be willing to return to life for the ritual to work. If they are not willing, you instinctively understand that as you start the respite activity and can cease it immediately.\n\nA creature with a willing soul returns to life at the end of the respite with full Stamina and half their Recoveries. You regain only half your Recoveries at the end of the respite.",
+						"type": "Text",
+						"data": null
+					},
+					{
+						"id": "conduit-3-2",
+						"name": "7pt Ability",
+						"description": "",
+						"type": "Class Ability",
+						"data": {
+							"cost": 7,
+							"source": {
+								"fromClassAbilities": true,
+								"fromSelectedSubclassAbilities": true,
+								"fromUnselectedSubclassAbilities": false,
+								"fromClassLevels": false,
+								"fromSelectedSubclassLevels": false,
+								"fromUnselectedSubclassLevels": false
+							},
+							"minLevel": 1,
+							"count": 1,
+							"selectedIDs": []
+						}
+					}
+				]
+			},
+			{
+				"level": 4,
+				"features": [
+					{
+						"id": "conduit-4-1",
+						"name": "Blessed Domain",
+						"description": "",
+						"type": "Heroic Resource Gain",
+						"data": {
+							"tag": "domain",
+							"trigger": "You gain piety from a domain effect.",
+							"value": "1",
+							"replacesTags": []
+						}
+					},
+					{
+						"id": "conduit-4-1a",
+						"name": "Characteristic Increase: Intuition",
+						"description": "Your Intuition score increases to 3.",
+						"type": "Characteristic Bonus",
+						"data": {
+							"characteristic": "Intuition",
+							"value": 1
+						}
+					},
+					{
+						"id": "conduit-4-1b",
+						"name": "Characteristic Increase: Additional Choice",
+						"description": "You can increase one of your characteristic scores by 1, to a maximum of 3.",
+						"type": "Choice",
+						"data": {
+							"options": [
+								{
+									"feature": {
+										"id": "conduit-4-1b-1",
+										"name": "Agility",
+										"description": "",
+										"type": "Characteristic Bonus",
+										"data": {
+											"characteristic": "Agility",
+											"value": 1
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-4-1b-2",
+										"name": "Might",
+										"description": "",
+										"type": "Characteristic Bonus",
+										"data": {
+											"characteristic": "Might",
+											"value": 1
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-4-1b-3",
+										"name": "Reason",
+										"description": "",
+										"type": "Characteristic Bonus",
+										"data": {
+											"characteristic": "Reason",
+											"value": 1
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "conduit-4-1b-4",
+										"name": "Presence",
+										"description": "",
+										"type": "Characteristic Bonus",
+										"data": {
+											"characteristic": "Presence",
+											"value": 1
+										}
+									},
+									"value": 1
+								}
+							],
+							"count": 1,
+							"selectAt": "build",
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-4-2",
+						"name": "Perk",
+						"description": "",
+						"type": "Perk",
+						"data": {
+							"lists": [
+								"Crafting",
+								"Exploration",
+								"Interpersonal",
+								"Intrigue",
+								"Lore",
+								"Supernatural"
+							],
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-4-3",
+						"name": "Skill",
+						"description": "",
+						"type": "Skill Choice",
+						"data": {
+							"options": [],
+							"listOptions": [
+								"Crafting",
+								"Exploration",
+								"Interpersonal",
+								"Intrigue",
+								"Lore"
+							],
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-4-4",
+						"name": "4th-Level Domain Feature",
+						"description": "",
+						"type": "Domain Feature",
+						"data": {
+							"level": 4,
+							"count": 1,
+							"selected": []
+						}
+					}
+				]
+			},
+			{
+				"level": 5,
+				"features": [
+					{
+						"id": "conduit-5-1",
+						"name": "5th-Level Domain Feature",
+						"description": "You gain the 4th-level domain feature for the domain whose feature you didn’t select at that level.",
+						"type": "Domain Feature",
+						"data": {
+							"level": 4,
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-5-2",
+						"name": "9pt Ability",
+						"description": "",
+						"type": "Class Ability",
+						"data": {
+							"cost": 9,
+							"source": {
+								"fromClassAbilities": true,
+								"fromSelectedSubclassAbilities": true,
+								"fromUnselectedSubclassAbilities": false,
+								"fromClassLevels": false,
+								"fromSelectedSubclassLevels": false,
+								"fromUnselectedSubclassLevels": false
+							},
+							"minLevel": 1,
+							"count": 1,
+							"selectedIDs": []
+						}
+					}
+				]
+			},
+			{
+				"level": 6,
+				"features": [
+					{
+						"id": "conduit-6-1",
+						"name": "Burgeoning Saint",
+						"description": "\nYou are infused with the power your deity reserves for their most worthy instruments. You have the following benefits:\n\n* You gain an edge on Presence tests made to interact with other creatures.\n* Whenever you deal damage to an enemy, you can spend a Recovery.\n* You have corruption immunity 10 or holy immunity 10 (your choice).\n* Your clothing and equipment changes in a way that reflects your status as your deity’s chosen champion, such as ordinary robes turning into gold vestments or a simple dagger becoming a wicked blade with intricate etching.",
+						"type": "Text",
+						"data": null
+					},
+					{
+						"id": "conduit-6-2",
+						"name": "Crafting / Lore / Supernatural Perk",
+						"description": "",
+						"type": "Perk",
+						"data": {
+							"lists": [
+								"Crafting",
+								"Lore",
+								"Supernatural"
+							],
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-6-3",
+						"name": "6th-Level Domain Ability",
+						"description": "",
+						"type": "Domain Feature",
+						"data": {
+							"level": 6,
+							"count": 1,
+							"selected": []
+						}
+					}
+				]
+			},
+			{
+				"level": 7,
+				"features": [
+					{
+						"id": "conduit-7-1a",
+						"name": "Might",
+						"description": "",
+						"type": "Characteristic Bonus",
+						"data": {
+							"characteristic": "Might",
+							"value": 1
+						}
+					},
+					{
+						"id": "conduit-7-1b",
+						"name": "Agility",
+						"description": "",
+						"type": "Characteristic Bonus",
+						"data": {
+							"characteristic": "Agility",
+							"value": 1
+						}
+					},
+					{
+						"id": "conduit-7-1c",
+						"name": "Reason",
+						"description": "",
+						"type": "Characteristic Bonus",
+						"data": {
+							"characteristic": "Reason",
+							"value": 1
+						}
+					},
+					{
+						"id": "conduit-7-1d",
+						"name": "Intuition",
+						"description": "",
+						"type": "Characteristic Bonus",
+						"data": {
+							"characteristic": "Intuition",
+							"value": 1
+						}
+					},
+					{
+						"id": "conduit-7-1e",
+						"name": "Presence",
+						"description": "",
+						"type": "Characteristic Bonus",
+						"data": {
+							"characteristic": "Presence",
+							"value": 1
+						}
+					},
+					{
+						"id": "conduit-7-2",
+						"name": "Faithful’s Reward",
+						"description": "",
+						"type": "Heroic Resource Gain",
+						"data": {
+							"tag": "start 2",
+							"trigger": "Start of your turn",
+							"value": "1d3 + 1",
+							"replacesTags": []
+						}
+					},
+					{
+						"id": "conduit-7-3",
+						"name": "Skill",
+						"description": "",
+						"type": "Skill Choice",
+						"data": {
+							"options": [],
+							"listOptions": [
+								"Crafting",
+								"Exploration",
+								"Interpersonal",
+								"Intrigue",
+								"Lore"
+							],
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-7-4",
+						"name": "7th-Level Domain Feature",
+						"description": "",
+						"type": "Domain Feature",
+						"data": {
+							"level": 7,
+							"count": 1,
+							"selected": []
+						}
+					}
+				]
+			},
+			{
+				"level": 8,
+				"features": [
+					{
+						"id": "conduit-8-1",
+						"name": "Perk",
+						"description": "",
+						"type": "Perk",
+						"data": {
+							"lists": [
+								"Crafting",
+								"Exploration",
+								"Interpersonal",
+								"Intrigue",
+								"Lore",
+								"Supernatural"
+							],
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-8-2",
+						"name": "8th-Level Domain Feature",
+						"description": "You gain the 7th-level domain feature for the domain whose feature you didn’t select at that level.",
+						"type": "Domain Feature",
+						"data": {
+							"level": 7,
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-8-3",
+						"name": "11pt Ability",
+						"description": "",
+						"type": "Class Ability",
+						"data": {
+							"cost": 11,
+							"source": {
+								"fromClassAbilities": true,
+								"fromSelectedSubclassAbilities": true,
+								"fromUnselectedSubclassAbilities": false,
+								"fromClassLevels": false,
+								"fromSelectedSubclassLevels": false,
+								"fromUnselectedSubclassLevels": false
+							},
+							"minLevel": 1,
+							"count": 1,
+							"selectedIDs": []
+						}
+					}
+				]
+			},
+			{
+				"level": 9,
+				"features": [
+					{
+						"id": "conduit-9-1",
+						"name": "Faith’s Sword",
+						"description": "Each time you finish a respite, you can choose a willing hero ally who finished the respite with you. That ally gains the benefits of your Burgeoning Saint feature until you finish another respite. Additionally, you can spend piety as a free maneuver to give the hero 1 of their Heroic Resource for every 2 piety spent.",
+						"type": "Text",
+						"data": null
+					},
+					{
+						"id": "conduit-9-2",
+						"name": "Ordained",
+						"description": "Your god elevates the power flowing through you. Your characteristic scores are treated as 1 higher for the purpose of resisting potencies. Additionally, while you have 5 or more Victories, you speak with the voice of your deity. You have a double edge on Presence tests made to influence other creatures.",
+						"type": "Text",
+						"data": null
+					},
+					{
+						"id": "conduit-9-3",
+						"name": "9th-Level Domain Ability",
+						"description": "",
+						"type": "Domain Feature",
+						"data": {
+							"level": 9,
+							"count": 1,
+							"selected": []
+						}
+					}
+				]
+			},
+			{
+				"level": 10,
+				"features": [
+					{
+						"id": "conduit-10-1",
+						"name": "Avatar",
+						"description": "\nYou are now an avatar of your god! When you use your Prayer feature, you can be affected by up to three prayers at once, and you can change all those prayers and your ward as a respite activity. You can also use a maneuver to activate one of your domain effects without needing to pray.\n\nAdditionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.",
+						"type": "Text",
+						"data": null
+					},
+					{
+						"id": "conduit-10-2a",
+						"name": "Characteristic Increase: Intuition",
+						"description": "Your Intuition score increases to 5.",
+						"type": "Characteristic Bonus",
+						"data": {
+							"characteristic": "Intuition",
+							"value": 1
+						}
+					},
+					{
+						"id": "conduit-10-2b",
+						"name": "Characteristic Increase: Additional Choice",
+						"description": "You can increase one of your characteristic scores by 1, to a maximum of 5.",
+						"type": "Choice",
+						"data": {
+							"options": [
+								{
+									"feature": {
+										"id": "shadow-10-1b-1",
+										"name": "Might",
+										"description": "",
+										"type": "Characteristic Bonus",
+										"data": {
+											"characteristic": "Might",
+											"value": 1
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "shadow-10-1b-2",
+										"name": "Agility",
+										"description": "",
+										"type": "Characteristic Bonus",
+										"data": {
+											"characteristic": "Agility",
+											"value": 1
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "shadow-10-1b-3",
+										"name": "Reason",
+										"description": "",
+										"type": "Characteristic Bonus",
+										"data": {
+											"characteristic": "Reason",
+											"value": 1
+										}
+									},
+									"value": 1
+								},
+								{
+									"feature": {
+										"id": "shadow-10-1b-4",
+										"name": "Presence",
+										"description": "",
+										"type": "Characteristic Bonus",
+										"data": {
+											"characteristic": "Presence",
+											"value": 1
+										}
+									},
+									"value": 1
+								}
+							],
+							"count": 1,
+							"selectAt": "build",
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-10-3",
+						"name": "Divine Power",
+						"description": "\nYou can spend divine power on your abilities as if it were piety.\n\nAdditionally, you can spend divine power as if it were piety to use any conduit abilities you don’t have, as the gods answer your prayers with temporary and unique gifts. If you use a conduit ability you don’t have that usually costs no piety, you must spend 1 divine power to use it.\n\nDivine power remains until you spend it.",
+						"type": "Heroic Resource",
+						"data": {
+							"type": "epic",
+							"gains": [
+								{
+									"tag": "",
+									"trigger": "Finish a respite",
+									"value": "XP gained"
+								}
+							],
+							"details": "",
+							"canBeNegative": false,
+							"value": 0
+						}
+					},
+					{
+						"id": "conduit-10-4",
+						"name": "Most Pious",
+						"description": "When you roll for piety at the start of your turn in combat and you pray, you gain 1 additional piety.",
+						"type": "Text",
+						"data": null
+					},
+					{
+						"id": "conduit-10-5",
+						"name": "Crafting / Lore / Supernatural Perk",
+						"description": "",
+						"type": "Perk",
+						"data": {
+							"lists": [
+								"Crafting",
+								"Lore",
+								"Supernatural"
+							],
+							"count": 1,
+							"selected": []
+						}
+					},
+					{
+						"id": "conduit-10-6",
+						"name": "Skill",
+						"description": "",
+						"type": "Skill Choice",
+						"data": {
+							"options": [],
+							"listOptions": [
+								"Crafting",
+								"Exploration",
+								"Interpersonal",
+								"Intrigue",
+								"Lore"
+							],
+							"count": 1,
+							"selected": []
+						}
+					}
+				]
+			}
+		],
+		"abilities": [
+			{
+				"id": "conduit-ability-1",
+				"name": "Blessed Light",
+				"description": "Burning radiance falls upon your foe, transferring some of their energy to a nearby ally.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature or object",
+				"cost": "signature",
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "3 + I holy damage",
+							"tier2": "5 + I holy damage",
+							"tier3": "8 + I holy damage"
+						}
+					},
+					{
+						"type": "text",
+						"text": "One ally within distance gains a number of surges equal to the tier outcome of your power roll."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-2",
+				"name": "Drain",
+				"description": "You drain the energy from your target and revitalize yourself or an ally.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Melee",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Melee",
+						"value": 1,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature",
+				"cost": "signature",
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "2 + I corruption damage",
+							"tier2": "5 + I corruption damage",
+							"tier3": "7 + I corruption damage"
+						}
+					},
+					{
+						"type": "text",
+						"text": "You or one ally within distance can spend a Recovery."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-3",
+				"name": "Holy Lash",
+				"description": "A tendril of divine energy shoots forth to draw in your foe.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature or object",
+				"cost": "signature",
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "3 + I holy damage; vertical pull 2",
+							"tier2": "5 + I holy damage; vertical pull 3",
+							"tier3": "8 + I holy damage; vertical pull 4"
+						}
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-4",
+				"name": "Lightfall",
+				"description": "A rain of holy light scours your enemies and repositions your allies.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Area",
+					"Magic"
+				],
+				"distance": [
+					{
+						"type": "Burst",
+						"value": 2,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Each enemy in the area",
+				"cost": "signature",
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "2 holy damage",
+							"tier2": "3 holy damage",
+							"tier3": "5 holy damage"
+						}
+					},
+					{
+						"type": "text",
+						"text": "You can teleport yourself and each ally in the area to unoccupied spaces in the area."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-5",
+				"name": "Sacrificial Offer",
+				"description": "Divine magic tears at your foe and defends a nearby friend.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature",
+				"cost": "signature",
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "2 + I corruption damage",
+							"tier2": "4 + I corruption damage",
+							"tier3": "6 + I corruption damage"
+						}
+					},
+					{
+						"type": "text",
+						"text": "Choose yourself or one ally within distance. That character can impose a bane on one power roll made against them before the end of their next turn."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-6",
+				"name": "Staggering Curse",
+				"description": "A blast of judgment disorients your foe.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Melee",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Melee",
+						"value": 1,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature or object",
+				"cost": "signature",
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "3 + I holy damage; slide 1",
+							"tier2": "5 + I holy damage; slide 2",
+							"tier3": "8 + I holy damage; slide 3"
+						}
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-7",
+				"name": "Warrior's Prayer",
+				"description": "Your quickly uttered prayer lends aggressive divine energy to a friend engaged in melee.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature",
+				"cost": "signature",
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "3 + I holy damage",
+							"tier2": "6 + I holy damage",
+							"tier3": "9 + I holy damage"
+						}
+					},
+					{
+						"type": "text",
+						"text": "You or one ally within distance gains temporary Stamina equal to your Intuition score."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-8",
+				"name": "Wither",
+				"description": "A bolt of holy energy saps the life from a foe.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature or object",
+				"cost": "signature",
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "3 + I corruption damage; P < [weak], the target takes a bane on their next power roll",
+							"tier2": "5 + I corruption damage; P < [average], the target takes a bane on their next power roll",
+							"tier3": "8 + I corruption damage; P < [strong], the target takes a bane on their next power roll"
+						}
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-9",
+				"name": "Call the Thunder Down",
+				"description": "You ask your saint for thunder and your prayer is answered.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Area",
+					"Magic",
+					"Ranged"
+				],
+				"distance": [
+					{
+						"type": "Cube",
+						"value": 3,
+						"value2": 0,
+						"within": 10,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Each enemy in the area",
+				"cost": 3,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "2 sonic damage; push 1",
+							"tier2": "3 sonic damage; push 2",
+							"tier3": "5 sonic damage; push 3"
+						}
+					},
+					{
+						"type": "text",
+						"text": "You can push each willing ally in the area the same distance, ignoring stability."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-10",
+				"name": "Font of Wrath",
+				"description": "A brilliant column of holy light appears on the battlefield, striking out at nearby enemies.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Special",
+				"cost": 3,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "text",
+						"text": "You summon a spirit of size 2 who can’t be harmed, and who appears in an unoccupied space within distance. The spirit lasts until the end of your next turn. You and your allies can move through the spirit’s space, but enemies can’t. Any enemy who moves within 2 squares of the spirit for the first time in a combat round or starts their turn there takes holy damage equal to your Intuition score."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-11",
+				"name": "Judgment's Hammer",
+				"description": "Your divine fury is a hammer that crashes down upon the unrighteous.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature or object",
+				"cost": 3,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "3 + I holy damage; A < [weak], prone",
+							"tier2": "6 + I holy damage; A < [average], prone",
+							"tier3": "9 + I holy damage; A < [strong], prone and can’t stand (save ends)"
+						}
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-12",
+				"name": "Violence Will Not Aid Thee",
+				"description": "After some holy lightning, your enemy will think twice about their next attack.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature",
+				"cost": 3,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "3 + I lightning damage",
+							"tier2": "6 + I lightning damage",
+							"tier3": "9 + I lightning damage"
+						}
+					},
+					{
+						"type": "text",
+						"text": "The first time on a turn that the target deals damage to another creature, the target of this ability takes 1d10 lightning damage (save ends)."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-13",
+				"name": "Corruption's Curse",
+				"description": "Cursed by you, your enemy takes more damage from your allies.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature or object",
+				"cost": 5,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "3 + I corruption damage; M < [weak], damage weakness 5 (save ends)",
+							"tier2": "6 + I corruption damage; M < [average], damage weakness 5 (save ends)",
+							"tier3": "9 + I corruption damage; M < [strong], damage weakness 5 (save ends)"
+						}
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-14",
+				"name": "Curse of Terror",
+				"description": "Fear of divine judgment overwhelms your foe.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature",
+				"cost": 5,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "6 + I holy damage; I < [weak], frightened (save ends)",
+							"tier2": "9 + I holy damage; I < [average], frightened (save ends)",
+							"tier3": "13 + I holy damage; I < [strong], frightened (save ends)"
+						}
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-15",
+				"name": "Faith is Our Armor",
+				"description": "The heroes’ armor glows with golden light, granting divine protection.",
+				"type": {
+					"usage": "Maneuver",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Four allies",
+				"cost": 5,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "text",
+						"text": "You can target yourself instead of one ally with this ability."
+					},
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "The target gains 5 temporary Stamina",
+							"tier2": "The target gains 10 temporary Stamina",
+							"tier3": "The target gains 15 temporary Stamina"
+						}
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-16",
+				"name": "Sermon of Grace",
+				"description": "You inspire your allies with tales of your saint’s great deeds.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Area",
+					"Magic"
+				],
+				"distance": [
+					{
+						"type": "Burst",
+						"value": 4,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Each ally in the area",
+				"cost": 5,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "text",
+						"text": "Each target can spend a Recovery. Additionally, each target can use a free triggered action to end one effect on them that is ended by a saving throw or that ends at the end of their turn, or to stand up if prone."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-17",
+				"name": "Fear of the Gods",
+				"description": "Your divine magic makes a creature appear as what your enemies fear most.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Area",
+					"Magic",
+					"Ranged"
+				],
+				"distance": [
+					{
+						"type": "Cube",
+						"value": 5,
+						"value2": 0,
+						"within": 10,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Each enemy in the area",
+				"cost": 7,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "6 psychic damage; I < [weak], frightened (save ends)",
+							"tier2": "9 psychic damage; I < [average], frightened (save ends)",
+							"tier3": "13 psychic damage; I < [strong], frightened (save ends)"
+						}
+					},
+					{
+						"type": "text",
+						"text": "Each target is frightened of you or a creature you choose within distance."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-18",
+				"name": "Saint's Raiment",
+				"description": "An ally becomes the wearer of an empowered golden cloak.",
+				"type": {
+					"usage": "Maneuver",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One ally",
+				"cost": 7,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "text",
+						"text": "The target gains 20 temporary Stamina and 3 surges."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-19",
+				"name": "Soul Siphon",
+				"description": "A beam of energy connects a foe to a friend, draining life from one to heal the other.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One enemy",
+				"cost": 7,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "7 + I corruption damage",
+							"tier2": "10 + I corruption damage",
+							"tier3": "15 + I corruption damage"
+						}
+					},
+					{
+						"type": "text",
+						"text": "One ally within distance can spend any number of Recoveries."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-20",
+				"name": "Words of Wrath and Grace",
+				"description": "Your saint grants your enemies a vision of pain and fills your allies with healing energy.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Area",
+					"Magic"
+				],
+				"distance": [
+					{
+						"type": "Burst",
+						"value": 5,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Each enemy in the area",
+				"cost": 7,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "2 holy damage",
+							"tier2": "5 holy damage",
+							"tier3": "7 holy damage"
+						}
+					},
+					{
+						"type": "text",
+						"text": "Each ally in the area can spend a Recovery."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-21",
+				"name": "Beacon of Grace",
+				"description": "You ignite a foe with holy radiance, rewarding allies who attack them.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature",
+				"cost": 9,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "8 + I holy damage",
+							"tier2": "13 + I holy damage",
+							"tier3": "17 + I holy damage"
+						}
+					},
+					{
+						"type": "text",
+						"text": "Until the end of the encounter, whenever you or any ally damages the target using an ability, that creature can spend a Recovery. If the target is reduced to 0 Stamina before the end of the encounter, you can use a free triggered action to move this effect to another creature within distance."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-22",
+				"name": "Penance",
+				"description": "“If you won’t kneel, the gods will make you.”",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Area",
+					"Magic",
+					"Ranged"
+				],
+				"distance": [
+					{
+						"type": "Cube",
+						"value": 4,
+						"value2": 0,
+						"within": 10,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Each enemy in the area",
+				"cost": 9,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "4 corruption damage; I < [weak], prone and can’t stand (save ends)",
+							"tier2": "7 corruption damage; I < [average], prone and can’t stand (save ends)",
+							"tier3": "11 corruption damage; I < [strong], prone and can’t stand (save ends)"
+						}
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-23",
+				"name": "Sanctuary",
+				"description": "You send yourself or an ally to a divine manifold to instantaneously regain health.",
+				"type": {
+					"usage": "Maneuver",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Self or one ally",
+				"cost": 9,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "text",
+						"text": "The target is removed from the encounter map until the start of their next turn and can spend any number of Recoveries. At the start of their turn, the target reappears in the space they left or the nearest unoccupied space of their choice."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-24",
+				"name": "Vessel of Retribution",
+				"description": "You infuse yourself or an ally with the retributive energy of the gods, waiting to be unleashed.",
+				"type": {
+					"usage": "Maneuver",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Self or one ally",
+				"cost": 9,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "text",
+						"text": "The first time the target is dying or winded before the end of the encounter, each enemy within 5 squares of them takes 15 holy damage."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-25",
+				"name": "Arise!",
+				"description": "Your deity rewards you or an ally on the verge of defeat with a miracle burst of strength and resolve.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Self or one ally",
+				"cost": 11,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "text",
+						"text": "The target can spend any number of Recoveries, can end any effects on them that are ended by a saving throw or that end at the end of their turn, and can stand up if they are prone. Additionally, at the start of each of their turns until the end of the encounter or until they are dying, the target gains 3 surges."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-26",
+				"name": "Blessing of Steel",
+				"description": "A protective aura defends your allies from harm.",
+				"type": {
+					"usage": "Maneuver",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Area",
+					"Magic"
+				],
+				"distance": [
+					{
+						"type": "Aura",
+						"value": 5,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Self and each ally in the area",
+				"cost": 11,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "text",
+						"text": "Until the end of the encounter, any ability roll made against a target takes a bane and each target has damage immunity 5."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-27",
+				"name": "Blessing of the Blade",
+				"description": "“The power of the gods is within you, friends. Allow me to unleash it.”",
+				"type": {
+					"usage": "Maneuver",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Area",
+					"Magic"
+				],
+				"distance": [
+					{
+						"type": "Aura",
+						"value": 5,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "Self and each ally in the area",
+				"cost": 11,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "text",
+						"text": "At the end of each of your turns until the end of the encounter or until you are dying, each target gains 3 surges."
+					}
+				]
+			},
+			{
+				"id": "conduit-ability-28",
+				"name": "Drag the Unworthy",
+				"description": "You conjure an angel who moves a foe and heals your allies.",
+				"type": {
+					"usage": "Main Action",
+					"free": false,
+					"trigger": "",
+					"time": "",
+					"qualifiers": [],
+					"freeStrike": false
+				},
+				"keywords": [
+					"Magic",
+					"Ranged",
+					"Strike"
+				],
+				"distance": [
+					{
+						"type": "Ranged",
+						"value": 10,
+						"value2": 0,
+						"within": 0,
+						"special": "",
+						"qualifier": ""
+					}
+				],
+				"target": "One creature or object",
+				"cost": 11,
+				"repeatable": false,
+				"minLevel": 1,
+				"sections": [
+					{
+						"type": "roll",
+						"roll": {
+							"characteristic": [
+								"Intuition"
+							],
+							"bonus": 0,
+							"tier1": "9 + I holy damage; slide 3",
+							"tier2": "13 + I holy damage; slide 4",
+							"tier3": "17 + I holy damage; slide 6"
+						}
+					},
+					{
+						"type": "text",
+						"text": "Each ally the target comes adjacent to during the forced movement can spend a Recovery."
+					}
+				]
+			}
+		],
+		"subclasses": [],
+		"level": 1,
+		"characteristics": [
+			{
+				"characteristic": "Might",
+				"value": 0
+			},
+			{
+				"characteristic": "Agility",
+				"value": 1
+			},
+			{
+				"characteristic": "Reason",
+				"value": 1
+			},
+			{
+				"characteristic": "Intuition",
+				"value": 2
+			},
+			{
+				"characteristic": "Presence",
+				"value": 1
+			}
+		]
+	},
+	"career": {
+		"id": "career-soldier",
+		"name": "Soldier",
+		"description": "In your formative years, you fought tirelessly in skirmishes and campaigns against enemy forces.",
+		"features": [
+			{
+				"id": "career-soldier-feature-1",
+				"name": "Exploration Skill",
+				"description": "",
+				"type": "Skill Choice",
+				"data": {
+					"options": [],
+					"listOptions": [
+						"Exploration"
+					],
+					"count": 1,
+					"selected": [
+						"Climb"
+					]
+				}
+			},
+			{
+				"id": "career-soldier-feature-2",
+				"name": "Intrigue Skill",
+				"description": "",
+				"type": "Skill Choice",
+				"data": {
+					"options": [],
+					"listOptions": [
+						"Intrigue"
+					],
+					"count": 1,
+					"selected": [
+						"Pick Lock"
+					]
+				}
+			},
+			{
+				"id": "career-soldier-feature-3",
+				"name": "Languages",
+				"description": "",
+				"type": "Language Choice",
+				"data": {
+					"options": [],
+					"count": 2,
+					"selected": [
+						"The First Language",
+						"Kalliak"
+					]
+				}
+			},
+			{
+				"id": "career-soldier-feature-4",
+				"name": "Renown",
+				"description": "",
+				"type": "Bonus",
+				"data": {
+					"field": "Renown",
+					"value": 1,
+					"valueFromController": null,
+					"valueCharacteristics": [],
+					"valueCharacteristicMultiplier": 1,
+					"valuePerLevel": 0,
+					"valuePerEchelon": 0
+				}
+			},
+			{
+				"id": "career-soldier-feature-5",
+				"name": "Exploration Perk",
+				"description": "",
+				"type": "Perk",
+				"data": {
+					"lists": [
+						"Exploration"
+					],
+					"count": 1,
+					"selected": []
+				}
+			}
+		],
+		"incitingIncidents": {
+			"options": [
+				{
+					"id": "career-soldier-ii-1",
+					"name": "Dishonorable Discharge",
+					"description": "You enlisted in the military to protect others, but your commander ordered you to beat and kill civilians. When you refused, things got violent. You barely escaped the brawl that ensued, but now you vow to help people on your own terms."
+				},
+				{
+					"id": "career-soldier-ii-2",
+					"name": "Out of Retirement",
+					"description": "You had a long and storied career as a soldier before deciding to retire to a simpler life. But when you returned to your old home, you found your enemies had laid waste to it. Now the skills you earned on the battlefield are helping you as you become a different kind of warrior - one seeking to save others from the fate you suffered."
+				},
+				{
+					"id": "career-soldier-ii-3",
+					"name": "Peace Through Healing",
+					"description": "The sight of constant bloodshed took its toll on you. You seek peace through healing and dedicated yourself to ending wars before they begin, to spare those around you from the horror."
+				},
+				{
+					"id": "career-soldier-ii-4",
+					"name": "Sole Survivor",
+					"description": "You were the last surviving member of your unit after an arduous battle or monstrous assault, surviving only through luck. You turned away from the life of a soldier then, seeking to become a hero who could stand against such threats."
+				},
+				{
+					"id": "career-soldier-ii-5",
+					"name": "Stolen Valor",
+					"description": "Tired of eking out an existence on the streets, you enrolled in the military. However, you were unable to escape your lower-status background until the officer leading your unit fell in battle. In the chaos that ensued, you assumed their identity and returned home a hero. To avoid suspicion, you took on the life of an adventurer, staying always on the move."
+				},
+				{
+					"id": "career-soldier-ii-6",
+					"name": "Vow of Sacrifice",
+					"description": "You promised a fellow soldier that you’d protect his family if he ever fell in battle. When he did, you traveled to his village, but found its people slain or scattered by war. Driven by your vow, you have dedicated your life to finding any survivors and protecting others from a similar fate."
+				}
+			],
+			"selected": {
+				"id": "career-soldier-ii-3",
+				"name": "Peace Through Healing",
+				"description": "The sight of constant bloodshed took its toll on you. You seek peace through healing and dedicated yourself to ending wars before they begin, to spare those around you from the horror."
+			}
+		}
+	},
+	"complication": {
+		"id": "comp-frostheart",
+		"name": "Frostheart",
+		"description": "At the edge of the world, you were lost in a winter storm and presumed dead. But an unknown fate or power kept you alive, bringing you back with frosty skin and pale eyes.",
+		"features": [
+			{
+				"id": "comp-frostheart-b",
+				"name": "",
+				"description": "Whwhenever you make a strike that deals untyped damage, that strike can deal cold damage instead.",
+				"type": "Text",
+				"data": null
+			},
+			{
+				"id": "comp-frostheart-mods",
+				"name": "Damage Modifier",
+				"description": "",
+				"type": "Damage Modifier",
+				"data": {
+					"modifiers": [
+						{
+							"damageType": "Cold",
+							"type": "Immunity",
+							"value": 5,
+							"valueFromController": null,
+							"valueCharacteristics": [],
+							"valueCharacteristicMultiplier": 1,
+							"valuePerLevel": 0,
+							"valuePerEchelon": 0
+						},
+						{
+							"damageType": "Fire",
+							"type": "Weakness",
+							"value": 5,
+							"valueFromController": null,
+							"valueCharacteristics": [],
+							"valueCharacteristicMultiplier": 1,
+							"valuePerLevel": 0,
+							"valuePerEchelon": 0
+						}
+					]
+				}
+			}
+		]
+	},
+	"features": [
+		{
+			"id": "default-language",
+			"name": "Default Language",
+			"description": "",
+			"type": "Language Choice",
+			"data": {
+				"options": [],
+				"count": 1,
+				"selected": [
+					"Caelian"
+				]
+			}
+		}
+	],
+	"state": {
+		"staminaDamage": 0,
+		"staminaTemp": 0,
+		"recoveriesUsed": 0,
+		"surges": 0,
+		"victories": 2,
+		"xp": 9,
+		"heroTokens": 0,
+		"renown": 0,
+		"wealth": 1,
+		"projectPoints": 0,
+		"conditions": [],
+		"inventory": [
+			{
+				"id": "item-bloodbound-band",
+				"name": "Bloodbound Band",
+				"description": "This ring appears to be traced by dried blood, which returns each time it is rubbed away.",
+				"type": "Leveled Item",
+				"keywords": [
+					"Magic",
+					"Ring"
+				],
+				"crafting": {
+					"id": "item-bloodbound-band-crafting",
+					"name": "Craft Bloodbound Band",
+					"description": "Craft a Bloodbound Band.",
+					"itemPrerequisites": "A pair of obituaries that each mention the subject of the other",
+					"source": "Texts or lore in Caelian",
+					"characteristic": [
+						"Might",
+						"Reason",
+						"Intuition"
+					],
+					"goal": 450,
+					"isCustom": false,
+					"progress": null
+				},
+				"effect": "",
+				"featuresByLevel": [
+					{
+						"level": 1,
+						"features": [
+							{
+								"id": "item-bloodbound-band-1",
+								"name": "",
+								"description": "During a respite, you can touch the ring to any number of other Bloodbound Bands worn by willing creatures to form a bond among all of you. Creatures related by blood can’t form bonds in this way. Bonded creatures can each use the highest recovery value of any bonded creature in place of their own, and can spend each other’s Recoveries as if they were their own. Whenever any other bonded creature takes damage, each bonded creature takes 1 damage that can’t be reduced in any way. Your bond ends if you remove the ring, use it to bond with one or more other creatures, or die, but other rings continue to be bonded to each other.",
+								"type": "Text",
+								"data": null
+							},
+							{
+								"id": "item-bloodbound-band-1a",
+								"name": "Stamina",
+								"description": "",
+								"type": "Bonus",
+								"data": {
+									"field": "Stamina",
+									"value": 6,
+									"valueFromController": null,
+									"valueCharacteristics": [],
+									"valueCharacteristicMultiplier": 1,
+									"valuePerLevel": 0,
+									"valuePerEchelon": 0
+								}
+							}
+						]
+					},
+					{
+						"level": 5,
+						"features": [
+							{
+								"id": "item-bloodbound-band-5a",
+								"name": "Stamina",
+								"description": "",
+								"type": "Bonus",
+								"data": {
+									"field": "Stamina",
+									"value": 6,
+									"valueFromController": null,
+									"valueCharacteristics": [],
+									"valueCharacteristicMultiplier": 1,
+									"valuePerLevel": 0,
+									"valuePerEchelon": 0
+								}
+							},
+							{
+								"id": "item-bloodbound-band-5b",
+								"name": "Damage Modifier",
+								"description": "",
+								"type": "Damage Modifier",
+								"data": {
+									"modifiers": [
+										{
+											"damageType": "Damage",
+											"type": "Immunity",
+											"value": 2,
+											"valueFromController": null,
+											"valueCharacteristics": [],
+											"valueCharacteristicMultiplier": 1,
+											"valuePerLevel": 0,
+											"valuePerEchelon": 0
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"level": 9,
+						"features": [
+							{
+								"id": "item-bloodbound-band-9",
+								"name": "",
+								"description": "If a creature bonded with you dies, you can choose to die in their place. Your sacrifice twists fate to remove the creature from danger, and they regain Stamina equal to their winded value. Your ring then teleports into their possession and ceases to be magic.",
+								"type": "Text",
+								"data": null
+							},
+							{
+								"id": "item-bloodbound-band-9a",
+								"name": "Stamina",
+								"description": "",
+								"type": "Bonus",
+								"data": {
+									"field": "Stamina",
+									"value": 9,
+									"valueFromController": null,
+									"valueCharacteristics": [],
+									"valueCharacteristicMultiplier": 1,
+									"valuePerLevel": 0,
+									"valuePerEchelon": 0
+								}
+							}
+						]
+					}
+				],
+				"imbuements": [],
+				"count": 1
+			}
+		],
+		"projects": [],
+		"controlledSlots": [],
+		"notes": "",
+		"encounterState": "ready",
+		"hidden": false,
+		"defeated": false,
+		"titles": [
+			{
+				"id": "title-monster-bane",
+				"name": "Monster Bane",
+				"description": "“You dare mock Blunwin Mousebane? You think my deed trivial? Ah but you didn’t see the size of the mouse!”",
+				"echelon": 1,
+				"prerequisites": "You defeat a leader or solo monster with a Reason score of –2 or lower, such as an arixx.",
+				"features": [
+					{
+						"id": "title-monster-bane-1",
+						"name": "Beast Bane",
+						"description": "Creatures with the Animal keyword take a bane on strikes made against you.",
+						"type": "Text",
+						"data": null
+					},
+					{
+						"id": "title-monster-bane-2",
+						"name": "Monster Soother",
+						"description": "You gain an edge on tests made to calm or tame nonsapient creatures.",
+						"type": "Text",
+						"data": null
+					},
+					{
+						"id": "title-monster-bane-3",
+						"name": "Monster Trophy",
+						"description": "You decorate your equipment with a trophy from a creature you defeated. While the trophy is visible, you gain an edge on tests made to intimidate sapient creatures.",
+						"type": "Text",
+						"data": null
+					}
+				],
+				"selectedFeatureID": "title-monster-bane-2"
+			}
+		]
+	},
+	"abilityCustomizations": [],
+	"picture": null,
+	"sourcebookIDs": [
+		"core",
+		"orden",
+		"beastheart"
+	]
+}

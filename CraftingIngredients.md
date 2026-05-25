@@ -1,2 +1,5 @@
 - Demon Honey
 - Pig Yarn (for Jeb's sweater)
+- Werewolf Carcass
+- 1 lb seagrass
+- 5 oz leaves

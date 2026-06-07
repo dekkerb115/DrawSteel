@@ -25,7 +25,7 @@ Goal: 45
 # Lycanthropy cure
 Goal: 50 (done)
 | Respite # | Character | Contribution | Total |
-| --- | --- | ---- | ---- | --- | 
+| --- | --- | ---- | ---- | 
 | 3 | Tax | 15 | 15 |
 | 3 | Doctor | 12 | 27 |
 | 3 | Hans | 16 | 43 |

@@ -13,6 +13,7 @@ Goal: 450
 | 2.b | Ashleigh     | 21 | 120|
 | 2   | Wilhelm      |  8 | 128|
 | 2   | Jacobim      | 12 | 140| 
+| 3   | Ashleigh     | 11 | 151|
 
 # Healing Potion
 Goal: 45

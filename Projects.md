@@ -20,3 +20,10 @@ Goal: 45
 |---- |--------------|----|----|
 | 1   | Tax          | 17 |  17|
 | 2   | Tax          | 13 |  30|
+
+
+# Lycanthropy cure
+Goal: 50
+| Respite # | Character | Contribution | Total |
+| --- | --- | ---- | ---- | --- | 
+| 
